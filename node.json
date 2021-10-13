@@ -1,4 +1,9 @@
 {
-    "name": "Test Node",
-    "options": []
+    "name": "Test Text Node",
+    "options": [{
+        "title": "Text",
+        "name": "text",
+        "type": "string",
+        "default": "Dave is gettin after it"
+    }]
 }
