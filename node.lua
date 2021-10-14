@@ -7,7 +7,13 @@ util.json_watch("config.json", function(config)
     text = config.text -- update text via config
 end)
 
+local image = resource.load_image{
+    file = "zoid.jpeg";
+    mipmap = true;
+    nearest = true;
+}
+
 function node.render()
-    gl.clear(0,0,0,1)
-    font:write(250, 300, text, 64, 1,1,1,1) -- use the CONFIG value
+    image:draw(0,0, WIDTH, HEIGHT)
+    --font:write(250, 300, text, 64, 1,1,1,1) -- use the CONFIG value
 end
