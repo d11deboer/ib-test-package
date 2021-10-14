@@ -1,6 +1,6 @@
 gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
-local font = resource.load_font "./quicksand/Quicksand-Regular.otf"
+local font = resource.load_font "font.ttf"
 local text = "LETS GOOOO"
 
 util.json_watch("config.json", function(config)
