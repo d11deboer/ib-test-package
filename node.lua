@@ -8,7 +8,7 @@ util.json_watch("config.json", function(config)
 end)
 
 local image = resource.load_image{
-    file = "zoid.jpeg";
+    file = "IMG_0301.JPG";
     mipmap = true;
     nearest = true;
 }
