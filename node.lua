@@ -1,19 +1,7 @@
-gl.setup(640, 480)
+gl.setup(1024, 768)
 
-local font = resource.load_font("quicksand/Quicksand-Regular.otf")
-local text = "LETS GOOOO"
-
-util.json_watch("config.json", function(config)
-    text = config.text -- update text via config
-end)
-
-local image = resource.load_image{
-    file = "IMG_0301.JPG";
-    mipmap = true;
-    nearest = true;
-}
+local font = resource.load_font("silkscreen.ttf")
 
 function node.render()
-    image:draw(0,0, 640, 480)
-    font:write(250, 300, text, 64, 1,1,1,1) -- use the CONFIG value
+    font:write(120, 320, "Hello World", 100, 1,1,1,1)
 end
