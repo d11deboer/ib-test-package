@@ -1,6 +1,6 @@
 gl.setup(NATIVE_WIDTH, NATIVE_HEIGHT)
 
-local font = resource.load_font "font.ttf"
+local font = resource.load_font("quicksand/Quicksand-Regular.otf")
 local text = "LETS GOOOO"
 
 util.json_watch("config.json", function(config)
@@ -14,6 +14,6 @@ local image = resource.load_image{
 }
 
 function node.render()
-    image:draw(0,0, WIDTH, HEIGHT)
-    --font:write(250, 300, text, 64, 1,1,1,1) -- use the CONFIG value
+    image:draw(0,0, NATIVE_WIDTH, NATIVE_HEIGHT)
+    font:write(250, 300, text, 64, 1,1,1,1) -- use the CONFIG value
 end
