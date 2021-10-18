@@ -2,6 +2,7 @@
     "name": "Test Text Node",
     "options": [],
     "permissions": {
-        "network": "Needs access to IB API"
+        "network": "Needs access to IB API",
+        "internal-api": "Access granted"
     }
 }
