@@ -1,6 +1,5 @@
 {
     "name": "Rd3",
     "author": "Dave <david@smpl.co>",
-    "desc": "A test package for executing python API calls and auto-updates",
-    "repository": "https://github.com/d11deboer/ib-test-package.git"
+    "desc": "A test package for executing python API calls and auto-updates"
 }
